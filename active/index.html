@@ -12,7 +12,7 @@
             height: 100vh;
             margin: 0;
             font-family: 'Open Sans', sans-serif;
-            background-color: #0d0d0d;
+            background-color: #000;
             color: white;
         }
         img {
@@ -26,19 +26,20 @@
             text-align: center;
         }
         .form__input {
+            background-color: #141414;
             padding: 10px;
             width: 300px;
             border-radius: 5px;
-            border: 1px solid #ccc;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <img src="/jg.gif" alt="Logo">
+    <img src="/active/jg.gif" alt="Logo">
     <h1>JG Proxy</h1>
     <form id="uv-form">
-        <input id="uv-search-engine" value="https://www.google.com/search?q=%s" type="hidden"> 
-        <input id="uv-address" type="text" placeholder="Search Google or type an URL" class="form__input">
+        <input id="uv-search-engine" value="https://search.brave.com/search?q=%s" type="hidden"> 
+        <input id="uv-address" type="text" placeholder="Search Brave or type an URL" class="form__input">
     </form>
     <script src="uv/uv.bundle.js" charset="UTF-8" defer></script>
       <script src="uv/uv.config.js" charset="UTF-8" defer></script>
